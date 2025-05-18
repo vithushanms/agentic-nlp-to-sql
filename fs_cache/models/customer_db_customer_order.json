@@ -1,0 +1,148 @@
+{
+    "name": "customer_order",
+    "database": "customer_db",
+    "columns": [
+        {
+            "name": "OrderId",
+            "type": "INTEGER",
+            "notNull": 1,
+            "properties": {
+                "description": "Unique identifier for each customer order in the online store.",
+                "displayName": "OrderId"
+            }
+        },
+        {
+            "name": "CustomerId",
+            "type": "INTEGER",
+            "notNull": 1,
+            "properties": {
+                "description": "Unique identifier for each customer placing an order in the online store.",
+                "displayName": "CustomerId"
+            }
+        },
+        {
+            "name": "OrderDate",
+            "type": "DATETIME",
+            "notNull": 1,
+            "properties": {
+                "description": "Records the date and time when each customer order is placed.",
+                "displayName": "OrderDate"
+            }
+        },
+        {
+            "name": "OrderStatus",
+            "type": "VARCHAR(50)",
+            "notNull": 1,
+            "properties": {
+                "description": "Indicates the current status of each customer order in the system.",
+                "displayName": "OrderStatus"
+            }
+        },
+        {
+            "name": "TotalAmount",
+            "type": "DECIMAL(12, 2)",
+            "notNull": 1,
+            "properties": {
+                "description": "Represents the total monetary value of each customer order.",
+                "displayName": "TotalAmount"
+            }
+        },
+        {
+            "name": "Currency",
+            "type": "VARCHAR(10)",
+            "notNull": 1,
+            "properties": {
+                "description": "Stores the currency type for each customer order transaction.",
+                "displayName": "Currency"
+            }
+        },
+        {
+            "name": "PaymentStatus",
+            "type": "VARCHAR(50)",
+            "notNull": 1,
+            "properties": {
+                "description": "Indicates the current status of payment for customer orders.",
+                "displayName": "PaymentStatus"
+            }
+        },
+        {
+            "name": "ShippingAddress",
+            "type": "VARCHAR(500)",
+            "notNull": 1,
+            "properties": {
+                "description": "Stores the customer's shipping address for order delivery.",
+                "displayName": "ShippingAddress"
+            }
+        },
+        {
+            "name": "ShippingTerms",
+            "type": "VARCHAR(100)",
+            "notNull": 1,
+            "properties": {
+                "description": "Defines the conditions and methods for shipping customer orders.",
+                "displayName": "ShippingTerms"
+            }
+        },
+        {
+            "name": "EstimatedDeliveryDate",
+            "type": "DATETIME",
+            "notNull": 0,
+            "properties": {
+                "description": "Indicates the expected delivery date for customer orders of PC hardware.",
+                "displayName": "EstimatedDeliveryDate"
+            }
+        },
+        {
+            "name": "CreatedAt",
+            "type": "DATETIME",
+            "notNull": 1,
+            "properties": {
+                "description": "Timestamp indicating when the customer order was placed.",
+                "displayName": "CreatedAt"
+            }
+        },
+        {
+            "name": "CreatedUser",
+            "type": "VARCHAR(100)",
+            "notNull": 1,
+            "properties": {
+                "description": "Identifies the user who created the customer order in the system.",
+                "displayName": "CreatedUser"
+            }
+        },
+        {
+            "name": "UpdatedAt",
+            "type": "DATETIME",
+            "notNull": 0,
+            "properties": {
+                "description": "Records the date and time when the order was last updated.",
+                "displayName": "UpdatedAt"
+            }
+        },
+        {
+            "name": "UpdatedUser",
+            "type": "VARCHAR(100)",
+            "notNull": 0,
+            "properties": {
+                "description": "Records the username of the employee who last updated the order.",
+                "displayName": "UpdatedUser"
+            }
+        },
+        {
+            "name": "VersionFlag",
+            "type": "INTEGER",
+            "notNull": 1,
+            "properties": {
+                "description": "Indicates the version of the customer order for tracking updates.",
+                "displayName": "VersionFlag"
+            }
+        }
+    ],
+    "refreshTime": "2025-05-18T19:12:05.269327",
+    "properties": {
+        "description": "Stores customer orders for PC hardware from various locations in the online store.",
+        "displayName": "customer_order",
+        "database": "customer_db"
+    },
+    "primaryKey": "OrderId"
+}

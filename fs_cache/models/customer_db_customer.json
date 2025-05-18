@@ -1,0 +1,112 @@
+{
+    "name": "customer",
+    "database": "customer_db",
+    "columns": [
+        {
+            "name": "CustomerId",
+            "type": "INTEGER",
+            "notNull": 1,
+            "properties": {
+                "description": "Unique identifier for each customer in the online store database.",
+                "displayName": "CustomerId"
+            }
+        },
+        {
+            "name": "CustomerName",
+            "type": "VARCHAR(255)",
+            "notNull": 1,
+            "properties": {
+                "description": "Stores the full name of the customer for order identification and communication.",
+                "displayName": "CustomerName"
+            }
+        },
+        {
+            "name": "Email",
+            "type": "VARCHAR(255)",
+            "notNull": 0,
+            "properties": {
+                "description": "Stores customer email addresses for order confirmation and communication.",
+                "displayName": "Email"
+            }
+        },
+        {
+            "name": "PhoneNumber",
+            "type": "VARCHAR(50)",
+            "notNull": 0,
+            "properties": {
+                "description": "Stores customer contact numbers for order updates and support communication.",
+                "displayName": "PhoneNumber"
+            }
+        },
+        {
+            "name": "BillingAddress",
+            "type": "VARCHAR(500)",
+            "notNull": 1,
+            "properties": {
+                "description": "Stores the customer's billing address for order processing and invoicing.",
+                "displayName": "BillingAddress"
+            }
+        },
+        {
+            "name": "IsActive",
+            "type": "TINYINT",
+            "notNull": 1,
+            "properties": {
+                "description": "Indicates whether a customer account is currently active for purchases.",
+                "displayName": "IsActive"
+            }
+        },
+        {
+            "name": "CreatedAt",
+            "type": "DATETIME",
+            "notNull": 1,
+            "properties": {
+                "description": "Records the date and time when the customer account was created.",
+                "displayName": "CreatedAt"
+            }
+        },
+        {
+            "name": "CreatedUser",
+            "type": "VARCHAR(100)",
+            "notNull": 1,
+            "properties": {
+                "description": "Identifies the user who created the customer record in the system.",
+                "displayName": "CreatedUser"
+            }
+        },
+        {
+            "name": "UpdatedAt",
+            "type": "DATETIME",
+            "notNull": 0,
+            "properties": {
+                "description": "Records the last time customer information was updated for order processing.",
+                "displayName": "UpdatedAt"
+            }
+        },
+        {
+            "name": "UpdatedUser",
+            "type": "VARCHAR(100)",
+            "notNull": 0,
+            "properties": {
+                "description": "Records the username of the employee who last updated customer information.",
+                "displayName": "UpdatedUser"
+            }
+        },
+        {
+            "name": "VersionFlag",
+            "type": "INTEGER",
+            "notNull": 1,
+            "properties": {
+                "description": "Indicates the version of customer data for tracking updates and changes.",
+                "displayName": "VersionFlag"
+            }
+        }
+    ],
+    "refreshTime": "2025-05-18T19:11:53.494386",
+    "properties": {
+        "description": "Stores customer information for order processing and management in the online PC hardware store.",
+        "displayName": "customer",
+        "database": "customer_db"
+    },
+    "primaryKey": "CustomerId"
+}

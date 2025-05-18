@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "agentic-nlp-to-sql"
+version = "0.1.0"
+description = ""
+authors = ["vithushanms <vithushan@ideaboxai.com>"]
+readme = "README.md"
+packages = [{include = "agentic-nlp-to-sql"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langgraph = "^0.3.7"
+langchain-community = "^0.3.19"
+langchain-anthropic = "^0.3.9"
+langchain-experimental = "^0.3.4"
+langchain-openai = "^0.3.8"
+pygraphviz = "^1.14"
+composio-langchain = "^0.7.7"
+pandas = "^2.2.3"
+qdrant-client = "^1.13.3"
+langgraph-supervisor = "^0.0.10"
+termcolor = "^2.5.0"
+markdown2 = "^2.5.3"
+networkx = "^3.4.2"
+faiss-cpu = "^1.10.0"
+pymysql = "^1.1.1"
+matplotlib = "^3.10.1"
+scipy = "^1.15.2"
+hnswlib = "^0.8.0"
+peft = "^0.15.2"
+transformers = "^4.51.3"
+huggingface-hub = "^0.30.2"
+sqlglot = "^26.16.3"
+pyodbc = "^5.2.0"
+langchain-ollama = "^0.3.2"
+langchain-aws = "^0.2.23"
+mysql-connector-python = "^9.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

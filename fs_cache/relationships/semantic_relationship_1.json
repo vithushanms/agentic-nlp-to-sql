@@ -1,0 +1,9 @@
+{
+    "name": "CustomerOrders",
+    "models": [
+        "customer",
+        "customer_order"
+    ],
+    "joinType": "ONE_TO_MANY",
+    "condition": "customer.CustomerId = customer_order.CustomerId"
+}
