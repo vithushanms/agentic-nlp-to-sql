@@ -19,7 +19,7 @@ At IdeaboxAI, we've found that 4 out of 5 AI use cases require NLP to SQL integr
 - Demo database setup with sample PC hardware store data
 - High accuracy with complex ERP systems (maintaining 90%+ accuracy)
 
-## Demo
+## Demo Video
 
 [![Watch the demo video](https://img.youtube.com/vi/sykR4iugT7Y/0.jpg)](https://youtu.be/sykR4iugT7Y)
 
